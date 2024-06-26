@@ -3,8 +3,8 @@ import './Home.scss';
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the home page!</p>
+      <h1>test</h1>
+      <p>test</p>
     </div>
   );
 };
