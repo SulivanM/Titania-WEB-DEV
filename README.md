@@ -1,5 +1,6 @@
 Titania Gaming
-Bienvenue dans Titania Gaming, un projet web développé avec le framework Laravel. Titania Gaming est une plateforme dédiée aux passionnés de jeux vidéo, offrant diverses fonctionnalités pour améliorer l'expérience des joueurs.
+Bienvenue dans Titania Gaming, un projet web développé avec le framework Laravel.
+Titania Gaming est une plateforme dédiée aux passionnés de jeux vidéo, offrant diverses fonctionnalités pour améliorer l'expérience des joueurs.
 
 Table des matières
 Prérequis
