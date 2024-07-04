@@ -6,17 +6,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;  
+  padding: 70px 7px;  
   background-color: #000000;
   color: #fff;
   border: 5px solid $cyan-lighter;
+  background-image: url('../../assets/5212968.webp'); 
+  background-size: cover; 
+  background-position: bottom; 
 }
-
-.navbar-logo img {
-  height: 120px;
-  margin: -18px; 
+.navbar-logo{
+  border: solid 1px $cyan-lighter ;
 }
-
 .navbar-description h1 {
   margin: 0;
   font-size: 1.5rem;

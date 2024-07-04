@@ -1,10 +1,23 @@
 @import "../../style.scss";
 
 .main{
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 30px;
   background-color: $purple-light;
   color: white;
-  min-height: 85vh;
+  min-height: 80vh;
+  background-image: url('../../assets/5212968.webp'); 
+  background-size: cover; 
+  background-position:bottom;  
+  gap: 15px;
   
+  h1{
+    font-size: 35px;
+  }
+  p{
+    font-size: 25px
+  }
 }
+
