@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import Router from './router/Router.jsx';
 import Navbar from './components/Navbar/Navbar.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import './style.scss';
 
 const rootElement = document.getElementById('root');
@@ -15,8 +16,8 @@ root.render(
     <BrowserRouter>
 
       <Navbar/>
-
-      <Router />
+      <Router/>
+      <Footer/>
       
     </BrowserRouter>
   </React.StrictMode>

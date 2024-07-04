@@ -8,15 +8,17 @@ const Navbar = () => {
       <img src={logo} alt="Logo du projet" />
       </div>
       <div className="navbar-description">
-        
-      </div>
-      <div className="navbar-menu">
-        <ul className="navbar-links">
+      
+      <ul className="navbar-links">
           <li><a href="/">Accueil</a></li>
           <li><a href="#">Actualités</a></li>
           <li><a href="#">Gaming</a></li>
           <li><a href="#">Assitance/Support</a></li>
-        </ul>
+        </ul>  
+      </div>
+
+      <div className="navbar-menu">
+      <a href="#">Login</a>  
       </div>
     </nav>
   );
