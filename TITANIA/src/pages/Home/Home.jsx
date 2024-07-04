@@ -1,3 +1,4 @@
+
 import './Home.scss';
 import Ark from '../../assets/titania_ark.jpg';
 import Bob from '../../assets/titania_BOB.jpg';
@@ -9,6 +10,7 @@ import Isle from '../../assets/titania_the_isle.jpg';
 
 
 const Home = () => {
+  
   return (
     <div className='main'>
       <h1>Nos Jeux & Serveurs</h1>

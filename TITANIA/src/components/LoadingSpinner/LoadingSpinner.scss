@@ -1,0 +1,86 @@
+@import "../../style.scss";
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(25, 1, 30, 0.877); 
+  z-index: 9999;
+}
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff; // Couleur du texte pour le message de chargement
+}
+.rings {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rings .ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid #f13a8f;
+}
+
+.rings .ring:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  border: 7px solid #f13a8f;
+  animation: ring-1 1.5s linear infinite;
+}
+
+.rings .ring:nth-child(2) {
+  width: calc(100% * 0.65);
+  height: calc(100% * 0.65);
+  border: 4px solid #4bc8eb;
+  animation: ring-2 1.5s linear infinite;
+}
+
+.rings .ring:nth-child(3) {
+  width: calc(100% * 0.1);
+  height: calc(100% * 0.1);
+  border: 2px solid #36f372;
+  animation: ring-3 1.5s linear infinite;
+}
+
+@keyframes ring-1 {
+  0% {
+      transform: rotateZ(20deg);
+  }
+
+  100% {
+      transform: rotateZ(100deg) rotateY(360deg);
+  }
+}
+
+@keyframes ring-2 {
+  0% {
+      transform: rotateZ(100deg);
+  }
+
+  100% {
+      transform: rotateZ(0deg) rotateX(360deg);
+  }
+}
+
+@keyframes ring-3 {
+  0% {
+      transform: rotateZ(100deg) rotateX(-360deg);
+  }
+
+  100% {
+      transform: rotateZ(-100deg) rotateX(360deg);
+  }
+}
