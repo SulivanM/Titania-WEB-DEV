@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-      <a href="/" ><img src={logo} alt="Logo du projet" /></a>
+      <img src={logo} alt="Logo du projet" />
       </div>
       <div className="navbar-description">
       
@@ -18,6 +18,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-menu">
+      <i className="fa-solid fa-lock fa-spin-pulse"></i>
       <a href="#">Login</a>  
       </div>
     </nav>
