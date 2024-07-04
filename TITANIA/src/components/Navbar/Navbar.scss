@@ -6,16 +6,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 7px;  
+  padding: 70px 15px;  
   background-color: #000000;
   color: #fff;
-  border: 5px solid $cyan-lighter;
+  border: 10px solid;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border-image-slice: 1;
+  border-width: 5px;
   background-image: url('../../assets/5212968.webp'); 
   background-size: cover; 
   background-position: bottom; 
+  @include font-family-tiny5;
+  font-size: 35px;
 }
 .navbar-logo{
-  border: solid 1px $cyan-lighter ;
+  border: solid 1px cyan ;
 }
 .navbar-description h1 {
   margin: 0;
@@ -26,7 +31,7 @@
   display: flex;
   align-items: center;
   padding: 15px;
-  border: 2px solid $cyan-lighter;
+  border: 2px solid cyan;
   border-radius: 15px;
   transition:color 0.6s ease-in-out;
   &:hover{
@@ -42,16 +47,16 @@
   margin: 0;
   padding: 15px;
   display: flex;
-  border: 2px solid  $cyan-lighter;
+  border: 2px solid cyan;
   border-radius: 15px;
 }
 
-.navbar-links li {
+.navbar-links li {  
   margin-right: 10px;
- 
+
 }
 
-.navbar-links li a {
+.navbar-links li a {  
   color: #fff;
   text-decoration: none;
   padding: 10px;

@@ -1,20 +1,9 @@
-// Color Palette
 
-// Purple Shades
-$purple-darkest:  #231451;
-$purple-darker:   #20144F;
-$purple-dark:     #20144D;
-$purple:          #281974;
-$purple-light:    #211550;
-
-// Cyan Shades
-$cyan-darker:     #12D5D5;
-$cyan:            #12D7D7;
-$cyan-light:      #12D9D9;
-$cyan-lighter:    #12DCDB;
-
-// Blue Shades
-$blue-dark:       #211763;
+@mixin font-family-tiny5 {
+  font-family: 'Tiny5', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 //---------------------------------------------//
 
@@ -71,6 +60,7 @@ body {
   font-size: 16px; 
   
 }
+
 //---------------------------------------------//
 
 
