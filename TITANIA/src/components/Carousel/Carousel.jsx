@@ -1,17 +1,16 @@
-import "./Carousel.scss"
-import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import './Carousel.scss';
 
-
-const Carrousel = ({ images }) => {
+const Carousel = ({ images }) => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const preloadImages = () => {
-      const promises = images.map(src => {
+      const promises = images.map(image => {
         return new Promise((resolve, reject) => {
           const img = new Image();
-          img.src = src;
+          img.src = image.src;
           img.onload = resolve;
           img.onerror = reject;
         });
@@ -26,16 +25,18 @@ const Carrousel = ({ images }) => {
   }, [images]);
 
   if (!imagesLoaded) {
-    return null; 
+    return null;
   }
 
   return (
     <section id="slideshow">
       <div className="entire-content">
         <div className="content-carrousel">
-          {images.map((src, index) => (
+          {images.map((image, index) => (
             <figure className="shadow" key={index}>
-              <img src={src} alt={`Slide ${index + 1}`} />
+              <a href={image.link} target="_blank" rel="noopener noreferrer">
+                <img src={image.src} alt={`Slide ${index + 1}`} />
+              </a>
             </figure>
           ))}
         </div>
@@ -43,8 +44,12 @@ const Carrousel = ({ images }) => {
     </section>
   );
 };
-Carrousel.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string).isRequired
+
+Carousel.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
+  })).isRequired
 };
 
-export default Carrousel;
+export default Carousel;
