@@ -16,6 +16,7 @@ const Navbar = () => {
           <li><a href="#">Actualités</a></li>
           <li><a href="#">Gaming</a></li>
           <li><a href="#">Assitance</a></li>
+          <li><a href="https://uptime.titania.website/status/cloud" target="_blank" rel="noopener noreferrer">Status</a></li>
         </ul>  
       </div>
 
