@@ -1,0 +1,17 @@
+.video-player {
+  position: relative; /* Assurez-vous que le conteneur est positionné */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+
+  .video {
+    border-width: 9px;
+    border-style: solid;
+    border-image: linear-gradient(to right, purple, yellow);
+    border-image-slice: 1; /* Optionnel pour ajuster la taille de la bordure */
+    border-radius: 10px;
+    width: 24%;
+    height: auto;
+  }
+}
