@@ -15,13 +15,15 @@
   
   h1{
     font-size: 35px;
+    text-transform: uppercase;
     
   }
   p{
     font-size: 20px
   }
   .texte{
-    background-color: black;
+    background-color: $primary-color;
+    border: 10px solid #161b50;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -29,5 +31,6 @@
     gap: 15px;
     padding: 20px;
     border-radius: 15px;
+    
   }
 }
