@@ -2,6 +2,7 @@ import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 import DelaySuspense from  '../services/DelaySuspense'
+import Actu from '../pages/Actu/Actu';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 // Importez d'autres pages ici de manière dynamique
@@ -11,6 +12,7 @@ const Router = () => {
     <Routes>  
 
       <Route path="/" element={<Home />} />
+      <Route path="/actu" element={<Actu />} />
       {/* Ajoutez des futures routes ici */}
     </Routes>
     </DelaySuspense>
