@@ -23,11 +23,18 @@ const images = [
 const Home = () => {
   return (
     <div className='main'>
-      <VideoPlayer src={sampleVideo} controls autoplay/>    
+      <VideoPlayer src={sampleVideo} controls autoplay/>  
+      <section className='texte'>
       <h1>Nos Jeux & Serveurs</h1>
       <p>Titania est partout ! Ordinateur, tablette, console ou téléphone.</p>
-      <Carousel images={images} />      
+      </section>  
+      <Carousel images={images} /> 
+      <section className='texte'>
+      <h1>test</h1>
+      <p>estdsfdhhhhhhhhhhhhhhhhhhhhhhhhhe</p>
+      </section>     
     </div>
+    
   );
 };
 

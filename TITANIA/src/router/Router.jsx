@@ -7,7 +7,7 @@ const Home = lazy(() => import('../pages/Home/Home'));
 // Importez d'autres pages ici de manière dynamique
 const Router = () => {
   return (
-    <DelaySuspense delay={2000} fallback={<LoadingSpinner />}>
+    <DelaySuspense delay={1000} fallback={<LoadingSpinner />}>
     <Routes>  
 
       <Route path="/" element={<Home />} />
