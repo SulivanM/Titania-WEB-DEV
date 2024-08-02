@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Carousel.scss';
+import { useState, useEffect } from 'react';
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, inline }) => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
@@ -29,9 +29,9 @@ const Carousel = ({ images }) => {
   }
 
   return (
-    <section id="slideshow">
-      <div className="entire-content">
-        <div className="content-carrousel">
+    <section id={inline ? "slideshow-inline" : "slideshow"}>
+      <div className={inline ? "entire-content-inline" : "entire-content"}>
+        <div className={inline ? "content-carrousel-inline" : "content-carrousel"}>
           {images.map((image, index) => (
             <figure className="shadow" key={index}>
               <a href={image.link} target="_blank" rel="noopener noreferrer">
@@ -49,7 +49,8 @@ Carousel.propTypes = {
   images: PropTypes.arrayOf(PropTypes.shape({
     src: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired
-  })).isRequired
+  })).isRequired,
+  inline: PropTypes.bool
 };
 
 export default Carousel;
