@@ -26,12 +26,12 @@ const GameList = () => {
         </select>
       </div>
       <div className="games">
-        {filteredGames.map(game => (
-          <div key={game.id} className="game">
+        {filteredGames.map(game => (          
+          <a key={game.id} href={game.link} target="_blank" rel="noopener noreferrer" className="game">
             <img src={game.image} alt={game.name} />
             <h3>{game.name}</h3>
-            <p>{game.description}</p>            
-          </div>
+            <p>{game.description}</p>
+          </a>
         ))}
       </div>
     </div>

@@ -1,5 +1,4 @@
-// src/pages/Home/Home.js
-import React from 'react';
+
 import Carousel from '../../components/Carousel/Carousel';
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
 import GameList from '../../components/GameList/GameList';
@@ -21,6 +20,16 @@ const images = [
   { src: Gmod, link: 'https://example.com/gmod' },
   { src: Path, link: 'https://example.com/path' },
   { src: Isle, link: 'https://example.com/isle' },
+];
+
+const partenaires =[
+  { src: Ark, link: 'https://example.com/ark' },
+  { src: Bob, link: 'https://example.com/bob' },
+  { src: Dod, link: 'https://example.com/dod' },
+  { src: Farm, link: 'https://example.com/farm' },
+  { src: Gmod, link: 'https://example.com/gmod' },
+  { src: Path, link: 'https://example.com/path' },
+  { src: Isle, link: 'https://example.com/isle' },  
 ];
 
 const Home = () => {
@@ -46,6 +55,7 @@ const Home = () => {
         <p>Titania est disponible sur toutes les plateformes.</p>
       </section>
       <GameList />
+      <Carousel images={partenaires} />
     </div>
   );
 };
