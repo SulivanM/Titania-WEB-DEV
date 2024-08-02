@@ -3,14 +3,14 @@ const gamesData = [
   {
     id: 1,
     name: "Ark Ascended",
-    description: "les joueurs doivent survivre dans un monde rempli de dinosaures, d'animaux préhistoriques et toutes sortes de créatures disparues, de dangers naturels et potentiellement de joueurs humains hostiles..",
+    description: "Les joueurs doivent survivre dans un monde rempli de dinosaures, d'animaux préhistoriques et toutes sortes de créatures disparues, de dangers naturels et potentiellement de joueurs humains hostiles..",
     image: "/images/Ark.webp",
     category: "Survival",
   },
   {
     id: 2,
     name: "Beast of Bermuda",
-    description: "le joueur évolue en tant que dinosaure, ou autre créature préhistorique. Le joueur fait partie d'un écosystème vivant, créé par les joueurs. L'ultime objectif est de survivre sur une des îles de Beasts of Bermuda.",
+    description: "Le joueur évolue en tant que dinosaure, ou autre créature préhistorique. Le joueur fait partie d'un écosystème vivant, créé par les joueurs. L'ultime objectif est de survivre sur une des îles de Beasts of Bermuda.",
     image: "/images/Bob.webp",
     category: "Survival",
   },
