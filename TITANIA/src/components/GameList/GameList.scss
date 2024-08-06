@@ -10,6 +10,8 @@
     }
     select {
       padding: 5px;
+      border: 2px solid #fd6b4f;
+      border-radius: 5px;
     }
   }
   .games {
@@ -40,7 +42,7 @@
         background-color: #fe247f7b;
       }
       .category {
-        font-style: italic;
+        font-style: italic;        
       }
     }
   }
