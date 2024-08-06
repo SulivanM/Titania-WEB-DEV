@@ -1,15 +1,10 @@
 import './Actu.scss';
+import Gallery from '../../components/Gallery/Gallery';
 
 const Actu = () => {
   return (
-    <div className="mainActu">
-      
-      <section className="texte">
-        <h1>Actualités</h1>
-        <p>
-          En construction..
-        </p>
-      </section>      
+    <div className="mainActu">     
+      <Gallery />     
     </div>
   );
 };
