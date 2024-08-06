@@ -1,0 +1,129 @@
+@import "../../style.scss";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #000000;
+  color: #fff;
+  border: 10px solid;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border-image-slice: 1;
+  border-width: 5px;
+  background-image: url('../../assets/5212968.webp');
+  background-size: cover;
+  background-position: bottom;
+  @include font-family-tiny5;
+  font-size: 2.5rem; // Utilisation d'unités relatives
+
+  @media (max-width: 1030px) {    
+    align-items: flex-start;
+  }
+  @media (max-width: 425px) {    
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 25px;
+  }
+}
+
+.navbar-logo {
+  position: relative;
+  z-index: 1;
+}
+
+.box {
+  position: relative;
+  top: 6px;
+  left: 6px;
+}
+
+.box::before,
+.box::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  width: calc(100% + 31px);
+  height: calc(100% + 20px);
+  top: -16px;
+  left: -16px;
+  background: linear-gradient(45deg,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff
+  );
+  background-size: 300%;
+  animation: border 12s linear infinite;
+}
+
+.box::after {
+  filter: blur(50px);
+}
+
+@keyframes border {
+  0%, 100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300%;
+  }
+}
+
+.navbar-description h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  transition: color 0.5s ease-in-out;
+  gap: 15px;
+  &:hover {
+    color: rgb(214, 78, 221);
+  }
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  border: 15px double cyan;
+  border-radius: 15px;
+
+  @media (max-width: 1030px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.navbar-links li {
+  margin-right: 10px;
+
+  @media (max-width: 1030px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.5s ease-in-out;
+  &:hover {
+    color: rgb(214, 78, 221);
+  }
+}
+
+@media (max-width: 1030px) {
+  .navbar-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

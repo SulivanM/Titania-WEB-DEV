@@ -1,0 +1,15 @@
+@import "../../style.scss";
+
+.footer{
+  background-color: black;
+  color: white;
+  padding: 35px;    
+  width:100%;
+  text-align: center;
+  background-image: url('../../assets/5212968.webp'); 
+  background-size: cover; 
+  background-position:initial;
+  border: 5px solid;
+  border-image-source: linear-gradient(to right, #743ad5, #d53a9d);
+  border-image-slice: 1;
+};
