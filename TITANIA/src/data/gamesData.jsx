@@ -104,6 +104,30 @@ const gamesData = [
     category: "Battle",
     link: "https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/?l=french"
   },
+  {
+    id:14,
+    name: "For Honor",
+    description:"Combattez seul ou entre amis dans For Honor, un jeu de combat au corps à corps à la troisième personne où chaque joueur incarne un héros distinct.",
+    image: "/images/honor.webp",
+    category: "Battle",
+    link: "https://www.ubisoft.com/fr-fr/game/for-honor"
+  },
+  {
+    id:15,
+    name: "Vintage Story",
+    description:"Retrouvez-vous dans un monde ruiné repris par la nature et imprégné de troubles temporels troublants. Revivez l'avènement de la civilisation humaine, ou prenez votre propre chemin.",
+    image: "/images/vintagestory.webp",
+    category: "Survival",
+    link: "https://www.vintagestory.at/"
+  },
+  {
+    id:16,
+    name: "Farming Simulator 25",
+    description:"Créez votre exploitation, et que la récolte soit bonne ! Cultivez vos plantes, occupez-vous des animaux, gérez vos productions et relevez les défis des saisons. ",
+    image: "/images/farming.webp",
+    category: "Survival",
+    link: "https://www.farming-simulator.com/?lang=fr&country=fr"
+  },
   // Ajoutez d'autres jeux ici
 ];
 
