@@ -128,6 +128,54 @@ const gamesData = [
     category: "Survival",
     link: "https://www.farming-simulator.com/?lang=fr&country=fr"
   },
+  {
+    id:17,
+    name: "Red Dead Redemption",
+    description:"Découvrez le western épique qui a marqué toute une génération",
+    image: "/images/Red.webp",
+    category: "Survival",
+    link: "https://www.rockstargames.com/fr/reddeadredemption"
+  },
+  {
+    id:18,
+    name: "Dark and Darker",
+    description:"Une aventure en donjon dans un FPS fantastique hardcore. Rassemblez vos amis et utilisez votre courage, votre intelligence et votre ruse pour découvrir des trésors mythiques.",
+    image: "/images/dark.webp",
+    category: "Battle",
+    link: "https://www.darkanddarker.com/"
+  },
+  {
+    id:19,
+    name: "Palia",
+    description:"Un monde foisonnant, conçu rien que pour vous. Fabriquez des choses, cuisinez des plats, pêchez et cultivez avec vos amis en profitant d’une vie de rêve.",
+    image: "/images/palia.webp",
+    category: "Survival",
+    link: "https://palia.com/fr-FR/"
+  },
+  {
+    id:20,
+    name: "Albion Online",
+    description:"Si vous recherchiez un nouveau jeu pour vous mettre au défi et combler la nostalgie des premiers jeux bac-à-sable, alors ne cherchez pas plus loin, c'est Albion Online.",
+    image: "/images/albion.webp",
+    category: "Survival",
+    link: "https://albiononline.com/home"
+  },
+  {
+    id:21,
+    name: "Risk of Rain",
+    description:"Échappez à une planète étrangère chaotique en affrontant des hordes de monstres déchaînés, en solo ou entre amis.",
+    image: "/images/rain.webp",
+    category: "Battle",
+    link: "https://www.riskofrain.com/"
+  },
+  {
+    id:22,
+    name: "Speed Freeks",
+    description:"Flamboyez dans une pagaille haute en Orktane, pleine d'affrontements entre bandes de dingues de vitesse, et gorgée d'adrénaline dans l'univers brutal de Warhammer 40,000.",
+    image: "/images/header.webp",
+    category: "Battle",
+    link: "https://store.steampowered.com/app/2078450/Warhammer_40000_Speed_Freeks/"
+  },
   // Ajoutez d'autres jeux ici
 ];
 
