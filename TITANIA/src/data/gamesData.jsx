@@ -56,6 +56,54 @@ const gamesData = [
     category: "Battle",
     link: "https://vrising-france.com/"
   },
+  {
+    id:8,
+    name: "Minecraft",
+    description: "Vous devez récolter des ressources pour survivre face aux monstres et tenter de tuer l'Enderdragon.",
+    image: "/images/minecraft.webp",
+    category: "Survival",
+    link: "https://www.minecraft.net/fr-fr"
+  },
+  {
+    id:9,
+    name: "Project Zomboid",
+    description: "jeu ultime de survie face aux zombies. Que vous jouiez seul ou en multijoueur, vous devrez fouiller, construire, fabriquer, combattre, cultiver et pêcher pour tenter de survivre.",
+    image: "/images/Project-Z.webp",
+    category: "Survival",
+    link: "https://projectzomboid.com/blog/"
+  },
+  {
+    id:10,
+    name: "Palworld",
+    description: "Le but est de collectionner de mystérieuses créatures, les Pals, afin de les faire combattre, bâtir des structures, travailler dans les champs et faire tourner vos usines.",
+    image: "/images/palworld.webp",
+    category: "Survival",
+    link: "https://store.steampowered.com/app/1623730/Palworld/?l=french"
+  },
+  {
+    id:11,
+    name: "Creatures of Sonaria",
+    description:"Un jeu de survie où les joueurs obtiennent et élèvent des créatures, utilisent des capacités de combat, et socialisent. Ils peuvent former des groupes, chasser, et échanger des créatures. ",
+    image: "/images/creatures.webp",
+    category: "Survival",
+    link: "https://www.roblox.com/fr/discover/?Keyword=creatures%20of%20sonaria"
+  },
+  {
+    id:12,
+    name: "League of Legends",
+    description:"Que vous souhaitiez foncer dans la mêlée, soutenir vos alliés ou trouver un entre-deux, vous trouverez forcément votre bonheur dans la Faille.",
+    image: "/images/lol.webp",
+    category: "Battle",
+    link: "https://www.leagueoflegends.com/fr-fr/"
+  },
+  {
+    id:13,
+    name: "Warhammer 40,000: Darktide",
+    description:"Reprenez la ville de Tertium aux hordes d'ennemis assoiffés de sang dans ce jeu de tir intense et brutal.",
+    image: "/images/40k.webp",
+    category: "Battle",
+    link: "https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/?l=french"
+  },
   // Ajoutez d'autres jeux ici
 ];
 
