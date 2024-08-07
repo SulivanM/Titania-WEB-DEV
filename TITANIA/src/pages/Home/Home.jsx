@@ -38,7 +38,7 @@ const Home = () => {
     <div className="mainHome">
       <VideoPlayer src={sampleVideo} controls autoplay />
       <section className="texte">
-        <h1>Jouons !</h1>
+        <h1>Nos serveurs</h1>
         <p>
           Bienvenue dans une communauté multigaming qui se nomme TITANIA.
           <br />
@@ -52,7 +52,7 @@ const Home = () => {
       </section>
       <Carousel images={images} />
       <section className="texte">
-        <h2>Nos Jeux & Serveurs</h2>
+        <h2>Nos Jeux</h2>
         <p>Titania est disponible sur toutes les plateformes.</p>
       </section>
       <GameList />

@@ -3,21 +3,19 @@
   .filter {
     display: flex;
     justify-content:center;
-    label {
-      margin-right: 10px;
-      margin-top: 1px;
-      font-size: 25px;
-    }
+    
     select {
       padding: 5px;
       border: 2px solid #fd6b4f;
       border-radius: 5px;
+      font-size: 18px;
     }
   }
   .games {
     display: flex;
     flex-wrap: wrap;
-    padding: 70px;
+    padding-inline: 250px;
+    padding-block: 20px;
     @media (max-width: 770px) {   
       flex-direction: column;
       flex-wrap: nowrap;
@@ -46,15 +44,14 @@
       }
       h3 {
         margin: 10px 0;
+        text-align: center;
+        padding-bottom: 5px;
+        color: #ffbd62;
         
       }
       p {
-        margin: 5px 0;
-        background-color: #fe247f7b;
-      }
-      .category {
-        font-style: italic;        
-      }
+        margin: 15px;
+      }      
     }
   }
 }

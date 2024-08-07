@@ -4,7 +4,12 @@
   font-weight: 400;
   font-style: normal;
 }
-
+@mixin goblin {
+  font-family: "Goblin One", serif;  
+}
+@mixin londrina {
+  font-family: "Londrina Shadow", sans-serif;  
+}
 //---------------------------------------------//
 // _variables.scss
 $primary-color: #13063d;

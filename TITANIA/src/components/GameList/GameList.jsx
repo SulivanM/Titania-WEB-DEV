@@ -17,7 +17,7 @@ const GameList = () => {
   return (
     <div className="gameList">
       <div className="filter">
-        <label htmlFor="category">Filtrer par catégorie : </label>
+        <label htmlFor="category"></label>
         <select id="category" value={selectedCategory} onChange={handleCategoryChange}>
           <option value="All">Toutes</option>
           <option value="Survival">Survie</option>          
