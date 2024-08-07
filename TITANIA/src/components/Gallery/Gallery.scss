@@ -62,11 +62,17 @@ div[data-pos='4'] {
 @media (max-width: 800px) {
   .gallery {
     width: 405px;
-    height: 660px;
+    height: 660px; 
+    @media (max-width: 375px) {
+      width: 350px;
+    }       
 
     .item {
       width: 200px;
-      height: 150px;
+      height: 150px; 
+      @media (max-width: 375px) {
+        width: 155px;
+      }      
     }
 
     div[data-pos='0'] {
@@ -90,9 +96,16 @@ div[data-pos='4'] {
 
   div[data-pos='3'] {
     transform: translate(205px, 355px);
+    @media (max-width: 375px) {   
+      transform: translate(195px, 355px); 
+    }
   }
 
   div[data-pos='4'] {
     transform: translate(205px, 510px);
+    @media (max-width: 375px) {   
+      transform: translate(195px, 510px); 
+    }
+    
   }
 }
