@@ -14,10 +14,26 @@ const Gallery = () => {
 
   const images = [
     'https://th.bing.com/th/id/OIG3.Qo7LS5shmNWp.jNIyPg.?pid=ImgGn',
-    'https://images.unsplash.com/photo-1437751059337-ea72d4f73fcf?q=80&w=2322&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1515594515116-863345d8507c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1517953377824-516f2dca803b?q=80&w=2378&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://th.bing.com/th/id/OIG1.B8I9MllXTGeHE0d07.sq?w=1024&h=1024&rs=1&pid=ImgDetMain',
+    'https://th.bing.com/th/id/OIG1.uYJhMOC4YH.O3KCPLmz0?w=1024&h=1024&rs=1&pid=ImgDetMain',
+    'https://th.bing.com/th/id/OIG1.ohfopG8Bm66Ja4KksSs5?w=1024&h=1024&rs=1&pid=ImgDetMain',
+    'https://th.bing.com/th/id/OIG1.maRIw7cx7vAGk2CRxs9B?w=1024&h=1024&rs=1&pid=ImgDetMain',
+  ];
+
+  const alts = [
+    'Evenements',
+    'Boutique',
+    'Concours',
+    'Recrutements',
+    'Partenaires',
+  ];
+
+  const anchors = [
+    '#evenements',
+    '#boutique',
+    '#concours',
+    '#recrutements',
+    '#partenaires',
   ];
 
   return (
@@ -29,11 +45,18 @@ const Gallery = () => {
           data-pos={pos}
           onClick={() => handleClick(index)}
         >
-          <img src={images[index]} alt={`Gallery item ${index}`} />
+          {pos === 0 ? (
+            <a href={anchors[index]}>
+              <img src={images[index]} alt={alts[index]} />
+            </a>
+          ) : (
+            <img src={images[index]} alt={alts[index]} />
+          )}
         </div>
       ))}
     </div>
   );
 };
+
 
 export default Gallery;

@@ -4,7 +4,7 @@ const Gaming = () => {
   return (
     <div className="mainGaming">
       <section className="texte">
-        <h1>Services</h1>
+        <h1>En construction..</h1>
       </section>
     </div>
   );
