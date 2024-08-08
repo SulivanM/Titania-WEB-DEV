@@ -14,12 +14,18 @@
   .games {
     display: flex;
     flex-wrap: wrap;
-    padding-inline: 250px;
+    padding-inline: 200px;
     padding-block: 20px;
-    @media (max-width: 770px) {   
+    
+    @media (max-width: 975px) {   
       flex-direction: column;
       flex-wrap: nowrap;
-      align-items: center;       
+      align-items: center; 
+      padding-inline: 0;      
+      
+    }
+    @media (max-width: 1540px) {   
+      padding-inline: 0;      
       
     }
     a{
@@ -35,13 +41,20 @@
         width: 100%;       
         
       }
-      
+      @media (max-width: 975px) {   
+        width: 100%;         
+      }
       img {
         width: 100%;
         height: 265px;
         object-fit: fill;
         border-radius: 15px;
-        padding: 8px;
+        padding: 10px;
+        @media (max-width: 975px) {   
+          height: 300px; 
+          object-fit:contain;     
+          
+        }
       }
       h3 {
         margin: 10px 0;
